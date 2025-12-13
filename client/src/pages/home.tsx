@@ -48,6 +48,13 @@ const platformLinks: LinkItem[] = [
     url: "https://www.youtube.com/channel/UC3INLkL60Fvh_lnif6XVerw",
     icon: <Youtube className="w-5 h-5" />,
   },
+  {
+    id: "ia-direito-geral",
+    title: "IA Aplicada ao Direito - Claude Skill + Google AI Studio",
+    description: "Minutas de Petições e Decisões para qualquer área do direito. Para advogados, assessoria, magistrados, promotores e procuradores.",
+    url: "https://jonathan-ia-aplicada-ao-direito-43ew975u.manus.space/",
+    icon: <Sparkles className="w-5 h-5" />,
+  },
 ];
 
 const courseLinks: LinkItem[] = [
