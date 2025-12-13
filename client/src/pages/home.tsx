@@ -1,7 +1,6 @@
-import { ExternalLink, Youtube, Phone, BookOpen, Scale, Briefcase, Building2, FileCheck, GraduationCap } from "lucide-react";
+import { ExternalLink, Youtube, BookOpen, Scale, Briefcase, Building2, FileCheck, GraduationCap, Sparkles } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
 import { Card } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import profileImage from "@assets/Gemini_Generated_Image_yy44wryy44wryy44_1765649369611.png";
 
@@ -133,11 +132,11 @@ function LinkCard({ item, variant = "platform" }: { item: LinkItem; variant?: "p
       className="block w-full group"
       data-testid={`link-${item.id}`}
     >
-      <Card className="p-4 bg-card border-card-border transition-all duration-300 ease-out group-hover:scale-[1.02] group-hover:shadow-lg group-hover:border-primary/30">
+      <Card className="p-4 bg-card border-card-border transition-all duration-300 ease-out group-hover:scale-[1.02] group-hover:shadow-lg group-hover:shadow-primary/10 group-hover:border-primary/40">
         <div className="flex items-center gap-4">
           <div className={`flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center ${
             variant === "platform" 
-              ? "bg-primary/10 text-primary" 
+              ? "bg-primary/20 text-primary" 
               : "bg-muted text-muted-foreground"
           }`}>
             {item.icon}
@@ -170,64 +169,93 @@ export default function Home() {
   const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="w-full max-w-[600px] mx-auto px-4 py-8 md:py-12">
-        <header className="text-center mb-8">
-          <Avatar className="w-[120px] h-[120px] mx-auto mb-4 ring-4 ring-primary/20 ring-offset-2 ring-offset-background">
-            <AvatarImage src={profileImage} alt="Jonathan Gadelha" className="object-cover" />
-            <AvatarFallback className="text-2xl font-semibold bg-primary text-primary-foreground">JG</AvatarFallback>
-          </Avatar>
-          
-          <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-2" data-testid="text-name">
-            Jonathan Gadelha
-          </h1>
-          
-          <Badge variant="secondary" className="mb-3" data-testid="badge-title">
-            <BookOpen className="w-3 h-3 mr-1" />
-            Especialista em IA Aplicada ao Direito
-          </Badge>
-          
-          <p className="text-muted-foreground text-sm md:text-base max-w-md mx-auto mb-4">
-            Transformando a prática jurídica através da inteligência artificial. 
-            Plataformas, cursos e conteúdos exclusivos para profissionais do direito.
-          </p>
-          
-          <a
-            href={whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 bg-[#25D366] text-white rounded-lg font-medium text-sm transition-all duration-200 hover:bg-[#20BA5C] hover:scale-105"
-            data-testid="link-whatsapp"
-          >
-            <SiWhatsapp className="w-4 h-4" />
-            <span>Fale Comigo</span>
-            <span className="text-white/80">81 98125-2689</span>
-          </a>
-        </header>
+    <div className="min-h-screen bg-background relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 pointer-events-none" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
+      
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 py-8 md:py-12">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+          <aside className="lg:w-[320px] lg:sticky lg:top-8 lg:self-start">
+            <div className="text-center lg:text-left">
+              <div className="relative inline-block mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary/50 rounded-2xl blur-xl opacity-50" />
+                <img 
+                  src={profileImage} 
+                  alt="Jonathan Gadelha" 
+                  className="relative w-[200px] h-[200px] md:w-[280px] md:h-[280px] object-cover rounded-2xl ring-2 ring-primary/30 shadow-2xl shadow-primary/20"
+                  data-testid="img-profile"
+                />
+                <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-primary rounded-xl flex items-center justify-center shadow-lg">
+                  <Sparkles className="w-6 h-6 text-primary-foreground" />
+                </div>
+              </div>
+              
+              <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-2" data-testid="text-name">
+                Jonathan Gadelha
+              </h1>
+              
+              <Badge variant="secondary" className="mb-4 bg-primary/20 text-primary border-primary/30" data-testid="badge-title">
+                <BookOpen className="w-3 h-3 mr-1" />
+                Especialista em IA Aplicada ao Direito
+              </Badge>
+              
+              <p className="text-muted-foreground text-sm md:text-base max-w-md mx-auto lg:mx-0 mb-6">
+                Transformando a prática jurídica através da inteligência artificial. 
+                Plataformas, cursos e conteúdos exclusivos para profissionais do direito.
+              </p>
+              
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3 bg-[#25D366] text-white rounded-xl font-medium text-sm transition-all duration-200 hover:bg-[#20BA5C] hover:scale-105 shadow-lg shadow-[#25D366]/30"
+                data-testid="link-whatsapp"
+              >
+                <SiWhatsapp className="w-5 h-5" />
+                <span>Fale Comigo</span>
+                <span className="text-white/80 text-xs">81 98125-2689</span>
+              </a>
 
-        <section className="mb-8" aria-labelledby="platforms-heading">
-          <h2 id="platforms-heading" className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2" data-testid="heading-platforms">
-            <Scale className="w-5 h-5 text-primary" />
-            Plataformas de IA Jurídica
-          </h2>
-          <div className="space-y-3">
-            {platformLinks.map((link) => (
-              <LinkCard key={link.id} item={link} variant="platform" />
-            ))}
-          </div>
-        </section>
+              <div className="mt-8 p-4 bg-card/50 rounded-xl border border-card-border hidden lg:block">
+                <p className="text-xs text-muted-foreground text-center">
+                  Vamos construir o futuro?<br />
+                  <span className="text-foreground font-medium">Entre em contato para parcerias e consultorias.</span>
+                </p>
+              </div>
+            </div>
+          </aside>
 
-        <section aria-labelledby="courses-heading">
-          <h2 id="courses-heading" className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2" data-testid="heading-courses">
-            <GraduationCap className="w-5 h-5 text-primary" />
-            Cursos Disponíveis
-          </h2>
-          <div className="space-y-3">
-            {courseLinks.map((link) => (
-              <LinkCard key={link.id} item={link} variant="course" />
-            ))}
-          </div>
-        </section>
+          <main className="flex-1 min-w-0">
+            <section className="mb-8" aria-labelledby="platforms-heading">
+              <h2 id="platforms-heading" className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2" data-testid="heading-platforms">
+                <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
+                  <Scale className="w-4 h-4 text-primary" />
+                </div>
+                Plataformas de IA Jurídica
+              </h2>
+              <div className="space-y-3">
+                {platformLinks.map((link) => (
+                  <LinkCard key={link.id} item={link} variant="platform" />
+                ))}
+              </div>
+            </section>
+
+            <section aria-labelledby="courses-heading">
+              <h2 id="courses-heading" className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2" data-testid="heading-courses">
+                <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
+                  <GraduationCap className="w-4 h-4 text-primary" />
+                </div>
+                Cursos Disponíveis
+              </h2>
+              <div className="space-y-3">
+                {courseLinks.map((link) => (
+                  <LinkCard key={link.id} item={link} variant="course" />
+                ))}
+              </div>
+            </section>
+          </main>
+        </div>
 
         <footer className="mt-12 pt-6 border-t border-border text-center">
           <p className="text-xs text-muted-foreground">
