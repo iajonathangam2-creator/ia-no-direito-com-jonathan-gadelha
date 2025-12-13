@@ -42,13 +42,6 @@ const platformLinks: LinkItem[] = [
     icon: <Building2 className="w-5 h-5" />,
   },
   {
-    id: "youtube",
-    title: "Canal no YouTube",
-    description: "Conteúdos sobre IA no Direito",
-    url: "https://www.youtube.com/channel/UC3INLkL60Fvh_lnif6XVerw",
-    icon: <Youtube className="w-5 h-5" />,
-  },
-  {
     id: "ia-direito-geral",
     title: "IA Aplicada ao Direito - Claude Skill + Google AI Studio",
     description: "Minutas de Petições e Decisões para qualquer área do direito. Para advogados, assessoria, magistrados, promotores e procuradores.",
@@ -234,6 +227,38 @@ export default function Home() {
           </aside>
 
           <main className="flex-1 min-w-0">
+            <section className="mb-8" aria-labelledby="youtube-heading">
+              <a
+                href="https://www.youtube.com/channel/UC3INLkL60Fvh_lnif6XVerw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block group"
+                data-testid="link-youtube-featured"
+              >
+                <Card className="p-6 bg-gradient-to-r from-red-600/20 via-red-500/10 to-transparent border-red-500/30 transition-all duration-300 group-hover:scale-[1.02] group-hover:shadow-xl group-hover:shadow-red-500/20 group-hover:border-red-500/50">
+                  <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-red-600 flex items-center justify-center shadow-lg shadow-red-600/30">
+                      <Youtube className="w-7 h-7 text-white" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 mb-1">
+                        <h2 id="youtube-heading" className="font-bold text-foreground text-lg" data-testid="heading-youtube">
+                          Canal no YouTube
+                        </h2>
+                        <Badge variant="secondary" className="bg-red-600/20 text-red-400 border-red-500/30 text-xs">
+                          Destaque
+                        </Badge>
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        Conteúdos exclusivos sobre IA no Direito, tutoriais e novidades
+                      </p>
+                    </div>
+                    <ExternalLink className="w-5 h-5 text-red-400 group-hover:text-red-300 transition-colors flex-shrink-0" />
+                  </div>
+                </Card>
+              </a>
+            </section>
+
             <section className="mb-8" aria-labelledby="platforms-heading">
               <h2 id="platforms-heading" className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2" data-testid="heading-platforms">
                 <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
