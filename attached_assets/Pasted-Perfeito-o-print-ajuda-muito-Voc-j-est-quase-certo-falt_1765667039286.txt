@@ -1,0 +1,141 @@
+Perfeito, o print ajuda muito 👍
+Você já está quase certo, falta só ajustar e forçar a atualização correta no Meta (Facebook).
+
+Vou direto ao ponto 👇
+
+
+---
+
+🔴 O problema que o Meta está apontando
+
+> “Propriedades ausentes: og:url, fb:app_id”
+
+
+
+Isso não quebra o compartilhamento, mas:
+
+Gera aviso
+
+Pode causar cache errado
+
+Pode impedir atualização correta da prévia no futuro
+
+
+
+---
+
+✅ O que você deve fazer (passo a passo)
+
+1️⃣ Ajustar as tags Open Graph no seu site
+
+No <head> do seu site (Replit / Next / React), garanta que tenha exatamente isso:
+
+<meta property="og:title" content="Jonathan Gadelha | IA Aplicada ao Direito" />
+<meta property="og:description" content="Especialista em Inteligência Artificial aplicada ao Direito. Plataformas de agentes jurídicos e cursos." />
+<meta property="og:image" content="https://ia-no-direito-jonathangadelha.com/favicon.jpg" />
+<meta property="og:url" content="https://ia-no-direito-jonathangadelha.com/" />
+<meta property="og:type" content="website" />
+
+📌 Importante
+
+og:image deve ser imagem grande, não favicon
+👉 ideal: 1200x630
+
+A URL precisa ser https, pública e acessível
+
+
+
+---
+
+2️⃣ (Opcional, mas recomendado) Criar um fb:app_id
+
+Se quiser eliminar totalmente o aviso:
+
+1. Acesse 👉 https://developers.facebook.com/apps
+
+
+2. Crie um App básico
+
+
+3. Copie o App ID
+
+
+4. Adicione no <head>:
+
+
+
+<meta property="fb:app_id" content="SEU_APP_ID_AQUI" />
+
+⚠️ Isso não é obrigatório, mas deixa tudo 100% limpo.
+
+
+---
+
+3️⃣ Forçar a atualização no Meta (ESSENCIAL)
+
+Depois de salvar o site 👇
+
+1. Vá para o Debugger: 👉 https://developers.facebook.com/tools/debug/
+
+
+2. Cole sua URL:
+
+https://ia-no-direito-jonathangadelha.com/
+
+
+3. Clique em “Extrair novamente”
+
+
+4. Repita 2 ou 3 vezes
+
+
+
+📌 O Facebook usa cache agressivo.
+Sem isso, não atualiza.
+
+
+---
+
+🧠 Sobre a imagem que está aparecendo
+
+Ela está sendo puxada de:
+
+/favicon.jpg
+
+👉 Funciona, mas não é ideal para compartilhamento.
+
+Melhor prática:
+
+Criar uma imagem específica:
+
+og-image.jpg
+
+Tamanho: 1200x630
+
+Visual limpo + título
+
+
+Exemplo:
+
+<meta property="og:image" content="https://ia-no-direito-jonathangadelha.com/og-image.jpg" />
+
+
+---
+
+✅ Resumo rápido (checklist)
+
+✔ Ajustar og:url
+✔ Garantir og:image grande
+✔ (Opcional) adicionar fb:app_id
+✔ Clicar Extrair novamente no Debugger
+
+Se quiser, eu:
+
+🔧 Te digo exatamente onde mexer no Replit
+
+🎨 Crio a imagem perfeita de compartilhamento
+
+✅ Te entrego o código pronto
+
+
+Só me dizer qual stack você está usando (Next, React, HTML puro).
