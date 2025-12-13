@@ -31,7 +31,7 @@ const platformLinks: LinkItem[] = [
     id: "accounting",
     title: "Prestação de Contas Eleitorais e Partidárias",
     description: "Suporte para advogados e contadores",
-    url: "https://ia-no-direito-jonathangadelha-ai-xdwbqmqj.manus.space/",
+    url: "https://jonathanai-pce-pca-externo.manus.space/",
     icon: <FileCheck className="w-5 h-5" />,
   },
   {
