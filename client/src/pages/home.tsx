@@ -1,8 +1,7 @@
-import { ExternalLink, Youtube, BookOpen, Scale, Briefcase, Building2, FileCheck, GraduationCap, Sparkles, User, ArrowRight } from "lucide-react";
+import { ExternalLink, Youtube, BookOpen, Scale, Briefcase, Building2, FileCheck, GraduationCap, Sparkles, User } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import profileImage from "@assets/Gemini_Generated_Image_yy44wryy44wryy44_1765649369611.png";
 import bioImage from "@assets/image_1765804746053.png";
 
@@ -305,56 +304,12 @@ export default function Home() {
               </h2>
               
               <Card className="p-0 overflow-hidden bg-card border-card-border">
-                <div className="flex flex-col lg:flex-row">
-                  <div className="lg:w-2/5 relative">
-                    <img 
-                      src={bioImage} 
-                      alt="Jonathan Gadelha Almeida de Menezes" 
-                      className="w-full h-64 lg:h-full object-cover"
-                      data-testid="img-bio"
-                    />
-                  </div>
-                  
-                  <div className="lg:w-3/5 p-6 lg:p-8 flex flex-col justify-center">
-                    <Badge variant="secondary" className="w-fit mb-3 bg-primary/20 text-primary border-primary/30 text-xs">
-                      CRIADOR DO CONTEÚDO
-                    </Badge>
-                    
-                    <h3 className="text-xl lg:text-2xl font-bold text-foreground mb-4" data-testid="text-full-name">
-                      JONATHAN GADELHA ALMEIDA DE MENEZES
-                    </h3>
-                    
-                    <p className="text-sm lg:text-base text-muted-foreground mb-4">
-                      Servidor do <span className="text-foreground font-medium">Tribunal Regional Eleitoral de Pernambuco (TRE-PE)</span> e especialista em Direito Público e Direito Eleitoral, com pós-graduações nessas áreas.
-                    </p>
-                    
-                    <p className="text-sm lg:text-base text-muted-foreground mb-4">
-                      Assim como você, busco incessantemente pela integração entre Direito e outras disciplinas, como <span className="text-primary font-medium">Tecnologia e Inteligência Artificial</span>, para catalisar avanços na prática jurídica.
-                    </p>
-                    
-                    <p className="text-sm lg:text-base text-muted-foreground mb-5">
-                      Além disso, como servidor público engajado, tenho a visão de como a inovação pode potencializar o serviço público e aperfeiçoar a prestação jurisdicional.
-                    </p>
-                    
-                    <div className="border-l-2 border-primary/50 pl-4 mb-6">
-                      <p className="text-sm italic text-muted-foreground">
-                        "Viso não apenas capacitar, mas também inspirar uma nova geração de profissionais comprometidos com a excelência e a modernização do Direito Eleitoral."
-                      </p>
-                    </div>
-                    
-                    <a
-                      href="https://wa.me/5581981252689"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      data-testid="button-join-journey"
-                    >
-                      <Button variant="outline" className="w-fit group">
-                        Junte-se a mim nessa jornada
-                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                      </Button>
-                    </a>
-                  </div>
-                </div>
+                <img 
+                  src={bioImage} 
+                  alt="Jonathan Gadelha Almeida de Menezes - Servidor do TRE-PE, especialista em Direito Público e Direito Eleitoral" 
+                  className="w-full h-auto"
+                  data-testid="img-bio"
+                />
               </Card>
             </section>
           </main>
