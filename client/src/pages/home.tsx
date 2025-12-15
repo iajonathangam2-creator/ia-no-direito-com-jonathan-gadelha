@@ -31,7 +31,7 @@ const platformLinks: LinkItem[] = [
     id: "civil-law",
     title: "Agentes no Direito e Processo Civil",
     description: "Ações Cíveis com Claude Skill e Google AI Studio",
-    url: "https://lexteclaw-hmprq4cm.manus.space/",
+    url: "https://ia-no-direito-jonathangadelha-acoes-civeis.manus.space/",
     icon: <Scale className="w-5 h-5" />,
   },
   {
