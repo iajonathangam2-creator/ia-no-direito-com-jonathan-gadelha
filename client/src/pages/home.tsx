@@ -28,6 +28,13 @@ const platformLinks: LinkItem[] = [
     icon: <Briefcase className="w-5 h-5" />,
   },
   {
+    id: "civil-law",
+    title: "Agentes no Direito e Processo Civil",
+    description: "Ações Cíveis com Claude Skill e Google AI Studio",
+    url: "https://lexteclaw-hmprq4cm.manus.space/",
+    icon: <Scale className="w-5 h-5" />,
+  },
+  {
     id: "accounting",
     title: "Prestação de Contas Eleitorais e Partidárias",
     description: "Suporte para advogados e contadores",
