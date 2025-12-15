@@ -1,9 +1,10 @@
-import { ExternalLink, Youtube, BookOpen, Scale, Briefcase, Building2, FileCheck, GraduationCap, Sparkles, User } from "lucide-react";
+import { ExternalLink, Youtube, BookOpen, Scale, Briefcase, Building2, FileCheck, GraduationCap, Sparkles, ArrowRight } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import profileImage from "@assets/Gemini_Generated_Image_yy44wryy44wryy44_1765649369611.png";
-import bioImage from "@assets/image_1765804746053.png";
+import bioImage from "@assets/image_1765805455929.png";
 
 interface LinkItem {
   id: string;
@@ -295,32 +296,68 @@ export default function Home() {
               </div>
             </section>
 
-            <section className="mt-10" aria-labelledby="about-heading" data-testid="section-about">
-              <h2 id="about-heading" className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2" data-testid="heading-about">
-                <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
-                  <User className="w-4 h-4 text-primary" />
-                </div>
-                Conheça Jonathan Gadelha
-              </h2>
-              
-              <Card className="p-0 overflow-hidden bg-card border-card-border">
-                <img 
-                  src={bioImage} 
-                  alt="Jonathan Gadelha Almeida de Menezes - Servidor do TRE-PE, especialista em Direito Público e Direito Eleitoral" 
-                  className="w-full h-auto"
-                  data-testid="img-bio"
-                />
-              </Card>
-            </section>
           </main>
         </div>
-
-        <footer className="mt-12 pt-6 border-t border-border text-center">
-          <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Jonathan Gadelha. Todos os direitos reservados.
-          </p>
-        </footer>
       </div>
+
+      <section className="relative z-10 w-full bg-background border-t border-border" aria-labelledby="about-heading" data-testid="section-about">
+        <div className="flex flex-col lg:flex-row min-h-[500px]">
+          <div className="lg:w-2/5 relative">
+            <img 
+              src={bioImage} 
+              alt="Jonathan Gadelha Almeida de Menezes" 
+              className="w-full h-64 lg:h-full object-cover object-top"
+              data-testid="img-bio"
+            />
+          </div>
+          
+          <div className="lg:w-3/5 p-8 lg:p-12 xl:p-16 flex flex-col justify-center bg-background">
+            <Badge variant="secondary" className="w-fit mb-4 bg-primary/20 text-primary border-primary/30 text-xs uppercase tracking-wider">
+              Criador do Conteúdo
+            </Badge>
+            
+            <h2 id="about-heading" className="text-2xl lg:text-3xl xl:text-4xl font-bold text-foreground mb-6" data-testid="text-full-name">
+              JONATHAN GADELHA<br />ALMEIDA DE MENEZES
+            </h2>
+            
+            <p className="text-sm lg:text-base text-muted-foreground mb-4">
+              Servidor do <span className="text-foreground font-semibold">Tribunal Regional Eleitoral de Pernambuco (TRE-PE)</span> e especialista em Direito Público e Direito Eleitoral, com pós-graduações nessas áreas.
+            </p>
+            
+            <p className="text-sm lg:text-base text-muted-foreground mb-4">
+              Assim como você, busco incessantemente pela integração entre Direito e outras disciplinas, como <span className="text-primary font-semibold">Tecnologia e Inteligência Artificial</span>, para catalisar avanços na prática jurídica.
+            </p>
+            
+            <p className="text-sm lg:text-base text-muted-foreground mb-6">
+              Além disso, como servidor público engajado, tenho a visão de como a inovação pode potencializar o serviço público e aperfeiçoar a prestação jurisdicional.
+            </p>
+            
+            <div className="border-l-2 border-primary/60 pl-4 mb-8">
+              <p className="text-sm lg:text-base italic text-muted-foreground">
+                "Viso não apenas capacitar, mas também inspirar uma nova geração de profissionais comprometidos com a excelência e a modernização do Direito Eleitoral."
+              </p>
+            </div>
+            
+            <a
+              href="https://wa.me/5581981252689"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="button-join-journey"
+            >
+              <Button variant="outline" size="lg" className="w-fit group">
+                Junte-se a mim nessa jornada
+                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer className="relative z-10 py-6 border-t border-border text-center bg-background">
+        <p className="text-xs text-muted-foreground">
+          &copy; {new Date().getFullYear()} Jonathan Gadelha. Todos os direitos reservados.
+        </p>
+      </footer>
     </div>
   );
 }
