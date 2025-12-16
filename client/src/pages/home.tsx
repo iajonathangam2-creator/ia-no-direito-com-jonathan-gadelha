@@ -37,6 +37,13 @@ const platformLinks: LinkItem[] = [
     icon: <Scale className="w-5 h-5" />,
   },
   {
+    id: "penal-law",
+    title: "Agentes no Direito Penal e Processo Penal",
+    description: "Ações Penais com Claude Skill e Google AI Studio",
+    url: "https://ia-no-direito-jonathangadelha-acao-penal.manus.space/",
+    icon: <Scale className="w-5 h-5" />,
+  },
+  {
     id: "accounting",
     title: "Prestação de Contas Eleitorais e Partidárias",
     description: "Suporte para advogados e contadores",
