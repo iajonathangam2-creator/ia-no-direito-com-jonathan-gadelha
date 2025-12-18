@@ -199,7 +199,7 @@ export default function Home() {
                 <img 
                   src={profileImage} 
                   alt="Jonathan Gadelha" 
-                  className="relative w-[200px] h-[200px] md:w-[280px] md:h-[280px] object-cover rounded-2xl ring-2 ring-primary/30 shadow-2xl shadow-primary/20"
+                  className="relative w-[200px] md:w-[280px] h-auto object-contain rounded-2xl ring-2 ring-primary/30 shadow-2xl shadow-primary/20"
                   data-testid="img-profile"
                 />
                 <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-primary rounded-xl flex items-center justify-center shadow-lg">
