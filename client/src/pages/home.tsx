@@ -3,7 +3,7 @@ import { SiWhatsapp } from "react-icons/si";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import profileImage from "@assets/Gemini_Generated_Image_yy44wryy44wryy44_1765649369611.png";
+import profileImage from "@assets/Gemini_Generated_Image_pn8gc7pn8gc7pn8g_1766101710472.png";
 import bioImage from "@assets/image_1765805455929.png";
 
 interface LinkItem {
