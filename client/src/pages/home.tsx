@@ -1,4 +1,4 @@
-import { ExternalLink, Youtube, BookOpen, Scale, Briefcase, Building2, FileCheck, GraduationCap, Sparkles, ArrowRight } from "lucide-react";
+import { ExternalLink, Youtube, BookOpen, Scale, Briefcase, Building2, FileCheck, GraduationCap, Sparkles, ArrowRight, MessageCircle } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -270,6 +270,38 @@ export default function Home() {
                       </p>
                     </div>
                     <ExternalLink className="w-5 h-5 text-red-400 group-hover:text-red-300 transition-colors flex-shrink-0" />
+                  </div>
+                </Card>
+              </a>
+            </section>
+
+            <section className="mb-8" aria-labelledby="chatbot-heading">
+              <a
+                href="https://notebooklm.google.com/notebook/f906d1c8-d104-4732-81ad-dc49b2647724"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block group"
+                data-testid="link-chatbot-featured"
+              >
+                <Card className="p-6 bg-gradient-to-r from-blue-600/20 via-blue-500/10 to-transparent border-blue-500/30 transition-all duration-300 group-hover:scale-[1.02] group-hover:shadow-xl group-hover:shadow-blue-500/20 group-hover:border-blue-500/50">
+                  <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-blue-600 flex items-center justify-center shadow-lg shadow-blue-600/30">
+                      <MessageCircle className="w-7 h-7 text-white" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 mb-1">
+                        <h2 id="chatbot-heading" className="font-bold text-foreground text-lg" data-testid="heading-chatbot">
+                          ChatBot Jhon
+                        </h2>
+                        <Badge variant="secondary" className="bg-blue-600/20 text-blue-400 border-blue-500/30 text-xs">
+                          Destaque
+                        </Badge>
+                      </div>
+                      <p className="text-sm text-muted-foreground">
+                        Tire suas dúvidas sobre o curso e as Plataformas
+                      </p>
+                    </div>
+                    <ExternalLink className="w-5 h-5 text-blue-400 group-hover:text-blue-300 transition-colors flex-shrink-0" />
                   </div>
                 </Card>
               </a>
