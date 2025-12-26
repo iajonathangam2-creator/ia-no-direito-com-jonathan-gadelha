@@ -261,9 +261,6 @@ export default function Home() {
                         <h2 id="youtube-heading" className="font-bold text-foreground text-lg" data-testid="heading-youtube">
                           Canal no YouTube
                         </h2>
-                        <Badge variant="secondary" className="bg-red-600/20 text-red-400 border-red-500/30 text-xs">
-                          Destaque
-                        </Badge>
                       </div>
                       <p className="text-sm text-muted-foreground">
                         Conteúdos exclusivos sobre IA no Direito, tutoriais e novidades
@@ -293,9 +290,6 @@ export default function Home() {
                         <h2 id="chatbot-heading" className="font-bold text-foreground text-lg" data-testid="heading-chatbot">
                           ChatBot Jhon
                         </h2>
-                        <Badge variant="secondary" className="bg-blue-600/20 text-blue-400 border-blue-500/30 text-xs">
-                          Destaque
-                        </Badge>
                       </div>
                       <p className="text-sm text-muted-foreground">
                         Tire suas dúvidas sobre o curso e as Plataformas
