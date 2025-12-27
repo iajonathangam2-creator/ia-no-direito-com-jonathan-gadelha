@@ -181,7 +181,7 @@ function LinkCard({ item, variant = "platform" }: { item: LinkItem; variant?: "p
 }
 
 export default function Home() {
-  const whatsappNumber = "5581981252689";
+  const whatsappNumber = "5581996179923";
   const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 
   return (
@@ -230,7 +230,7 @@ export default function Home() {
               >
                 <SiWhatsapp className="w-5 h-5" />
                 <span>Fale Comigo</span>
-                <span className="text-white/80 text-xs">81 98125-2689</span>
+                <span className="text-white/80 text-xs">81 99617-9923</span>
               </a>
 
               <div className="mt-8 p-4 bg-card/50 rounded-xl border border-card-border hidden lg:block">
@@ -372,7 +372,7 @@ export default function Home() {
             </div>
             
             <a
-              href="https://wa.me/5581981252689"
+              href="https://wa.me/5581996179923"
               target="_blank"
               rel="noopener noreferrer"
               data-testid="button-join-journey"
