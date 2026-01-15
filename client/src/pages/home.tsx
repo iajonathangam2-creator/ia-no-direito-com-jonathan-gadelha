@@ -19,7 +19,7 @@ const platformLinks: LinkItem[] = [
     id: "electoral-law",
     title: "Agentes no Direito Eleitoral",
     description: "Plataforma de IA para direito eleitoral",
-    url: "https://lexmindai-ia-no-direito-com-jonathan.manus.space/",
+    url: "https://lextecmind-ia-no-eleitoral-com-jonathan.manus.space/",
     icon: <Scale className="w-5 h-5" />,
   },
   {
@@ -41,6 +41,13 @@ const platformLinks: LinkItem[] = [
     title: "Agentes no Direito Penal e Processo Penal",
     description: "Ações Penais com Claude Skill e Google AI Studio",
     url: "https://ia-no-direito-jonathangadelha-acao-penal.manus.space/",
+    icon: <Scale className="w-5 h-5" />,
+  },
+  {
+    id: "previdenciario-law",
+    title: "Agentes de IA Direito Previdenciário",
+    description: "Plataforma de IA para direito previdenciário",
+    url: "https://ia-no-direito-jonathangadelha-acoes-previdenciarias.manus.space/",
     icon: <Scale className="w-5 h-5" />,
   },
   {
