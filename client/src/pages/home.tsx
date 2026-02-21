@@ -51,6 +51,13 @@ const platformLinks: LinkItem[] = [
     icon: <Scale className="w-5 h-5" />,
   },
   {
+    id: "tributario-law",
+    title: "Agentes de IA Direito Tributário",
+    description: "Plataforma de IA para direito tributário",
+    url: "https://ia-no-direito-jonathangadelha-tributario.manus.space/",
+    icon: <Scale className="w-5 h-5" />,
+  },
+  {
     id: "accounting",
     title: "Prestação de Contas Eleitorais e Partidárias",
     description: "Suporte para advogados e contadores",
